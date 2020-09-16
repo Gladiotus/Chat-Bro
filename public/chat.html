@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chat App - Chat</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	</head>
+	<body>
+		<section class="chat-section">
+			<header class="chat-header">
+				<h1>ChatBro</h1>
+				<h2 class="mobile-room-name"></h2>
+				<h3 class="mobile-users-names">John, George, Paul, Ringo and 3 more</h3>
+				<a class="leave-btn" href="/"><i class="fas fa-sign-out-alt fa-2x"></i></a>
+			</header>
+			<main class="chat-main">
+				<div class="chat-info">
+					<h2 class="room-label"></h2>
+					<h2 class="room-name"></h2>
+					<h2 class="users-label"></h2>
+					<ul class="users-names"></ul>
+				</div>
+				<div class="chat-box"></div>
+			</main>
+			<div class="input-message">
+				<input type="text" name="message" id="message" placeholder="Enter Message" />
+				<button class="send-message">
+					<i class="fas fa-paper-plane"></i>
+				</button>
+			</div>
+		</section>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+			integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
+			crossorigin="anonymous"
+		></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
