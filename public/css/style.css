@@ -108,6 +108,7 @@ form label {
 	color: white;
 	padding: 0.5rem;
 	position: fixed;
+	z-index: 3;
 	top: 0;
 }
 .chat-header h1,
