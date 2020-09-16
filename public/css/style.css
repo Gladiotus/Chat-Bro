@@ -96,17 +96,19 @@ form label {
 
 /* chat page */
 .chat-section {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
-	display: grid;
-	grid-template-rows: 70px 1fr 50px;
+	margin-top: 70px;
+	margin-bottom: 50px;
 }
 .chat-header {
 	width: 100%;
-	height: 100%;
+	height: 70px;
 	background-color: var(--dark-color-a);
 	color: white;
 	padding: 0.5rem;
+	position: fixed;
+	top: 0;
 }
 .chat-header h1,
 .chat-header h2 {
@@ -153,10 +155,12 @@ form label {
 	font-size: 1.25rem;
 }
 .input-message {
-	height: 100%;
+	height: 50px;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 40px;
+	position: fixed;
+	bottom: 0;
 }
 #message {
 	padding: 0.5rem;
